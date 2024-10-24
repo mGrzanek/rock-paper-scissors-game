@@ -27,8 +27,8 @@ body {
 
 .container {
     max-width: 1140px;
-    margin: 25px auto;
-    padding: 45px 35px;
+    margin: 15px auto;
+    padding: 20px 35px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -38,9 +38,16 @@ body {
     text-align: center;
 }
 
-h1, h2 {
+h1, h3 {
     color: $color-maritime;
-    text-shadow: 2px 2px 1px $color-dark;
+    text-shadow: 1px 1px 1px $color-dark;
+    margin: 0;
+    padding: 5px;
+}
+
+section {
+    margin: 0;
+    padding: 5px 0;
 }
 
 span {
@@ -96,4 +103,9 @@ header {
             opacity: .8;
         }
     }
+}
+
+#messages {
+    font-style: italic;
+    font-size: 1.2rem;
 }

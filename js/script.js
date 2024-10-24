@@ -22,7 +22,7 @@ function playGame(playerInput) {
     }
 
     function displayResult(argComputerMove, argPlayerMove) {
-        printMessage(`Zagrałem ${computerMove}, a Ty ${playerMove}`);
+        printMessage(`Zagrałem ${computerMove}, a Ty ${playerMove}.`);
         if (argComputerMove === 'kamień' && argPlayerMove === "nożyce") {
             printMessage("Tym razem przegrywasz :(")
             computerResult++;
