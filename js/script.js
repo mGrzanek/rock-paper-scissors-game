@@ -1,6 +1,8 @@
+const playerName = prompt('Wpisz swoję imię: ');
 let computerResult = 0;
 let playerResult = 0;
-printResult(computerResult, playerResult);
+
+printResult(computerResult, playerResult, playerName);
 
 function playGame(playerInput) {
 
@@ -54,11 +56,8 @@ function playGame(playerInput) {
     let computerMove = getMoveName(randomNumber);
     let playerMove = getMoveName(playerInput);
 
-    /*console.log(`Wylosowana liczba to ${randomNumber}`);
-    console.log(`Gracz wybrał ${playerInput}`);*/
-
     displayResult(computerMove, playerMove);
-    printResult(computerResult, playerResult);
+    printResult(computerResult, playerResult, playerName);
 
 }
 

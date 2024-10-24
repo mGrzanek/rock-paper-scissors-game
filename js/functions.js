@@ -4,9 +4,9 @@ function printMessage(msg){
 	document.getElementById('messages').appendChild(div);
 }
 
-function printResult(arg1, arg2) {
+function printResult(arg1, arg2, playerName) {
 	let div = document.createElement('div');
-	div.innerHTML = `${arg1} : ${arg2}`;
+	div.innerHTML = `Tommy ${arg1} : ${arg2} ${playerName}`;
 	document.getElementById('result').appendChild(div);
 }
 

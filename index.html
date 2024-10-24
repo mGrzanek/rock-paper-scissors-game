@@ -3,17 +3,35 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="container">
-		<div id="buttons">
-			<button type="button" id="play-rock">Kamień</button>
-			<button type="button" id="play-paper">Papier</button>
-			<button type="button" id="play-scissors">Nożyce</button>
-		</div>
+		<header class="welcome">
+			<h1>Kamień, papier, nożyce</h1>
+			<p>Witaj w grze! Twoim przeciwnikiem będzie boot - Tommy <i class="fa-solid fa-robot"></i></i></p>
+			<h2>Zasady gry:</h2>
+			<p>Wybierz odpowiedni przycisk i sprawdź, co wybrał Tommy.<br>
+				Punkty będą naliczane według poniższych zasad.
+			</p>
+			<p>Kamień wygrywa z nożycami, bo może je rozbić.<br>
+				Nożyce wygrywają z papierem, bo mogą go przeciąć.<br>
+				Papier wygrywa z kamieniem, który można nim owinąć.<br>
+				Wybranie takich samych elementów oznacza remis.<br>
+			</p>
+			<p>Udanej gry!</p>
+		</header>
+		<section id="buttons">
+			<button type="button" id="play-rock">Kamień <i class="fa-solid fa-hand-back-fist"></i></button>
+			<button type="button" id="play-paper">Papier <i class="fa-solid fa-hand"></i></button>
+			<button type="button" id="play-scissors">Nożyce <i class="fa-solid fa-hand-scissors"></i></button>
+		</section>
 		<div id="messages"></div>
-		<div id="result"></div>
+		<section class="score" >
+			<h3>Wynik:</h3>
+			<div id="result"></div>
+		</section>
 	</div>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
