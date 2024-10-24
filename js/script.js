@@ -1,3 +1,7 @@
+let computerResult = 0;
+let playerResult = 0;
+printResult(computerResult, playerResult);
+
 function playGame(playerInput) {
 
     clearMessages();
@@ -17,25 +21,30 @@ function playGame(playerInput) {
 
     function displayResult(argComputerMove, argPlayerMove) {
         printMessage(`Zagrałem ${computerMove}, a Ty ${playerMove}`);
-
         if (argComputerMove === 'kamień' && argPlayerMove === "nożyce") {
             printMessage("Tym razem przegrywasz :(")
+            computerResult++;
         } else if (argComputerMove === 'kamień' && argPlayerMove === "kamień") {
             printMessage("Remis!");
         } else if (argComputerMove === "kamień" && argPlayerMove === "papier") {
             printMessage("Ty wygrywasz!");
+            playerResult++;
         } else if (argComputerMove === 'papier' && argPlayerMove === "kamień") {
             printMessage("Tym razem przegrywasz :(");
+            computerResult++;
         } else if (argComputerMove === "papier" && argPlayerMove === "papier") {
             printMessage("Remis!");
         } else if (argComputerMove === "papier" && argPlayerMove === "nożyce") {
             printMessage("Ty wygrywasz!");
+            playerResult++;
         } else if (argComputerMove === "nożyce" && argPlayerMove === "kamień") {
             printMessage("Ty wygrywasz!");
+            playerResult++;
         } else if (argComputerMove === "nożyce" && argPlayerMove === "nożyce") {
             printMessage("Remis!");
         } else if(argComputerMove === "nożyce" && argPlayerMove === "papier") {
             printMessage("Tym razem przegrywasz :(");
+            computerResult++;
         } else {
             printMessage("Upsss... Something went wrong. Try again.");
         }
@@ -49,6 +58,7 @@ function playGame(playerInput) {
     console.log(`Gracz wybrał ${playerInput}`);*/
 
     displayResult(computerMove, playerMove);
+    printResult(computerResult, playerResult);
 
 }
 
@@ -61,4 +71,5 @@ document.getElementById('play-paper').addEventListener('click', function() {
 document.getElementById('play-scissors').addEventListener('click', function() {
     playGame(3);
 });
+
 
