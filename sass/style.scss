@@ -27,6 +27,7 @@ body {
 
 .container {
     max-width: 1140px;
+    width: 60vw;
     margin: 10px auto;
     padding: 20px 35px;
     position: absolute;
@@ -50,7 +51,7 @@ section {
     padding: 5px 0;
 }
 
-span {
+i {
     font-size: 1.1rem;
     text-shadow: 2px 2px 1px $color-gray;
 }
@@ -68,7 +69,7 @@ header {
             font-size: 1.2rem;
         }
 
-        span {
+        i {
             color: $color-green;
         }
     }
@@ -113,8 +114,8 @@ header {
         font-weight: 800;
         cursor: pointer;
 
-        span {
-            padding-left: 5px;
+        i {
+            padding-right: 5px;
         }
         
         &:hover {
@@ -126,4 +127,59 @@ header {
 #messages {
     font-style: italic;
     font-size: 1.2rem;
+    color: $color-maritime;
 }
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 10px;
+    }
+
+    .container {
+        margin: 60px auto;
+        left: 10%;
+        transform: translateX(-5%);
+        width: 90vw;
+    }
+
+    i {
+        font-size: .8rem;
+    }
+
+    header {
+        .game-welcome {
+            p {
+                font-size: .7rem;
+            }
+        }
+    }
+
+    .score {
+        #result {
+            font-size: .8rem;
+        }
+    }
+
+    #buttons {
+        display: flex;
+        justify-content: center;
+
+        button {
+            font-size: 10px;
+            padding: 5px 10px 7px;
+            margin-right: 2px;
+        }
+    }
+
+    #messages {
+        font-size: .7rem;
+    }
+}
+
+/* @media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        left: 35%;
+        transform: translateX(-30%);
+    }
+}*/
