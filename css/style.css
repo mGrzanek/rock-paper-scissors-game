@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Kablammo&display=swap");
 /* Variables */
 /* Global */
 *, *::before, *::after {
@@ -8,6 +9,7 @@ body {
   margin: 0;
   font-size: 16px;
   background: #eff2f5;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -23,4 +25,29 @@ body {
   text-align: center;
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFBO0FBTUEsV0FBQTtBQUVBO0VBQ0ksc0JBQUE7QUNMSjs7QURTQTtFQUNJLFNBQUE7RUFDQSxlQUFBO0VBQ0EsbUJBZFc7QUNRZjs7QURTQTtFQUNJLGlCQUFBO0VBQ0EsaUJBQUE7RUFDQSxrQkFBQTtFQUNBLGtCQUFBO0VBQ0EsU0FBQTtFQUNBLDJCQUFBO0VBQ0EsbUJBdkJVO0VBd0JWLGtCQUFBO0VBQ0EsK0JBQUE7RUFDQSxrQkFBQTtBQ05KIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
+h1, h2 {
+  color: #38ada9;
+  text-shadow: 2px 2px 1px #1e272e;
+}
+
+span {
+  font-size: 1.1rem;
+  text-shadow: 2px 2px 1px #596275;
+}
+
+/* Header */
+header .game-welcome h1 {
+  font-family: "Kablammo", system-ui;
+}
+header .game-welcome span {
+  color: #33d9b2;
+}
+header .game-rules :nth-child(3) {
+  font-style: italic;
+}
+header .game-rules p:last-of-type {
+  font-weight: 600;
+  color: #38ada9;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBUSw2RUFBQTtBQUVSLGNBQUE7QUFXQSxXQUFBO0FBRUE7RUFDSSxzQkFBQTtBQ1hKOztBRGVBO0VBQ0ksU0FBQTtFQUNBLGVBQUE7RUFDQSxtQkFuQlc7RUFvQlgseUNBQUE7QUNaSjs7QURlQTtFQUNJLGlCQUFBO0VBQ0EsaUJBQUE7RUFDQSxrQkFBQTtFQUNBLGtCQUFBO0VBQ0EsU0FBQTtFQUNBLDJCQUFBO0VBQ0EsbUJBN0JVO0VBOEJWLGtCQUFBO0VBQ0EsK0JBQUE7RUFDQSxrQkFBQTtBQ1pKOztBRGVBO0VBQ0ksY0FqQ2E7RUFrQ2IsZ0NBQUE7QUNaSjs7QURlQTtFQUNJLGlCQUFBO0VBQ0EsZ0NBQUE7QUNaSjs7QURnQkEsV0FBQTtBQUlRO0VBQ0ksa0NBN0NXO0FDNkJ2QjtBRG1CUTtFQUNJLGNBbkRFO0FDa0NkO0FEc0JRO0VBQ0ksa0JBQUE7QUNwQlo7QUR1QlE7RUFDSSxnQkFBQTtFQUNBLGNBL0RLO0FDMENqQiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
