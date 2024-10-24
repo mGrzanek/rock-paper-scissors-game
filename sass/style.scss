@@ -1,0 +1,31 @@
+/* Variables */
+
+$color-silver: #eff2f5;
+$color-light: #f8f9fa;
+$color-gray: #596275;
+
+/* Global */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-size: 16px;
+    background: $color-silver;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 25px auto;
+    padding: 45px 35px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: $color-light;
+    border-radius: 10%;
+    box-shadow: 2px 2px 5px $color-gray;
+    text-align: center;
+}
