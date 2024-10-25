@@ -1,6 +1,8 @@
-const playerName = prompt('Wpisz swoję imię: ');
+let playerName = prompt('Wpisz swoję imię: ');
 let computerResult = 0;
 let playerResult = 0;
+
+playerName = nameCheck(playerName, "Ty");
 
 printResult(computerResult, playerResult, playerName);
 

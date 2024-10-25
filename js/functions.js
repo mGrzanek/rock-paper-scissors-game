@@ -14,3 +14,12 @@ function clearMessages(){
 	document.getElementById('messages').innerHTML = '';
 	document.getElementById('result').innerHTML = '';
 }
+
+function nameCheck(arg, val) {
+    console.log('checked!')
+    if(!arg) {
+        return val;      
+    } else {
+        return arg;
+    }
+}
