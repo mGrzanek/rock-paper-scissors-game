@@ -4,9 +4,9 @@ function printMessage(msg){
 	document.getElementById('messages').appendChild(div);
 }
 
-function printResult(arg1, arg2, playerName) {
+function printResult(pointsOne, pointsTwo, playerName) {
 	let div = document.createElement('div');
-	div.innerHTML = `Tommy ${arg1} : ${arg2} ${playerName}`;
+	div.innerHTML = `Tommy ${pointsOne} : ${pointsTwo} ${playerName}`;
 	document.getElementById('result').appendChild(div);
 }
 
@@ -15,11 +15,10 @@ function clearMessages(){
 	document.getElementById('result').innerHTML = '';
 }
 
-function nameCheck(arg, val) {
-    console.log('checked!')
-    if(!arg) {
-        return val;      
+function nameCheck(name, newValue) {
+    if(!name) {
+        return newValue;      
     } else {
-        return arg;
+        return name;
     }
 }
